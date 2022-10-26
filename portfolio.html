@@ -8,24 +8,38 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header class="page-header">
       <!--Top Line-->
-      <a href="/" class="logo" lang="en"><span>Web</span>Studio</a>
-      <nav>
-        <ul class="menu-nav list">
-          <li><a href="./index.html" class="link">Студія</a></li>
-          <li><a href="./portfolio.html" class="link">Портфоліо</a></li>
-          <li><a href="./contacts.html" class="link">Контакти</a></li>
+    <header class="page-header">
+      <div class="container header">
+        <a href="/" class="logo" lang="en"><span>Web</span>Studio</a>
+        <nav>
+          <ul class="menu-nav list">
+            <li class="item">
+              <a href="./index.html" class="link">Студія</a>
+            </li>
+            <li class="item">
+              <a href="./portfolio.html" class="link">Портфоліо</a>
+            </li>
+            <li class="item">
+              <a href="./contacts.html" class="link"></a>Контакти
+            </li>
+          </ul>
+        </nav>
+        <ul class="contact-nav list">
+          <li class="item">
+            <a href="tel:+380961111111">+38 096 111 11 11</a>
+          </li>
+          <li class="item">
+            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
         </ul>
-      </nav>
-      <ul class="contact-nav list">
-        <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-      </ul>
+      </div>
     </header>
     <main>
-      <h2 class="visually-hidden">Фільтр</h2>
-      <ul>
+      <section class="section portfolio">
+      <div class="container main-portfolio">
+       <h2 class="visually-hidden">Фільтр</h2>
+      <ul class="filter-menu">
         <li class="filter-list">
           <button class="filter-button" type="button">Усі</button>
         </li>
@@ -42,9 +56,9 @@
           <button class="filter-button" type="button">Маркетинг</button>
         </li>
       </ul>
-      <section>
+      <!-- <section> -->
         <h2 class="visually-hidden">Портфоліо</h2>
-        <ul>
+        <ul class="projects">
           <li class="project-list">
             <a href="#">
               <img 
@@ -145,6 +159,8 @@
             <p class="project">Додаток</p>
           </li>
         </ul>
+      
+      </div>
       </section>
     </main>
     <footer>
