@@ -20,14 +20,16 @@ body {
   background-color: var(--accent-color2);
   color: var(--primary-title-color);
 }
-
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+/* Page-header */
 .page-header {
   margin-bottom: 0;
   /* outline: 2px solid red; */
   border-bottom: 1px solid #ececec;
-  /* }
-.page-header {
-  display: flex; */
 }
 
 .logo {
@@ -45,7 +47,7 @@ body {
 .list {
   list-style: none;
 }
-/* Menu auth nav */
+/* Menu nav - contact-nav */
 .menu-nav .link:hover,
 .page-link:focus,
 .contact-nav a:hover,
@@ -59,11 +61,13 @@ body {
   text-decoration: none;
   color: inherit;
 }
+.header {
+  display: flex;
+  align-items: center;
+}
 .menu-nav .link,
 .contact-nav .link {
   display: block;
-  /* padding-top: 5px;
-  padding-bottom: 5px; */
 }
 
 .menu-nav {
@@ -71,17 +75,10 @@ body {
   margin-left: 93px;
 }
 
-/* .menu-nav .item :not(last-child) {
-  margin-right: 50px;
-} */
 .menu-nav .item + .item {
   margin-left: 50px;
 }
 
-/* .contact-nav {
-  margin-top: 0;
-  margin-bottom: 0;
-} */
 .contact-nav {
   display: flex;
   margin-left: auto;
@@ -91,10 +88,6 @@ body {
   margin-left: 50px;
 }
 
-.header {
-  display: flex;
-  align-items: center;
-}
 /* Hero */
 .hero {
   background-color: #2f303a;
@@ -104,13 +97,14 @@ body {
   /* padding-bottom: 94px; */
 }
 .hero-title {
-  font-weight: 900px;
+  /* font-weight: 900px; */
   font-size: 44px;
   text-transform: uppercase;
   letter-spacing: 0.06em;
   color: var(--accent-color2);
   margin: 0;
   padding-top: 200px;
+  padding-bottom: 30px;
 }
 .hero-button {
   display: inline-block;
@@ -131,7 +125,7 @@ body {
   cursor: pointer;
 }
 
-/*Main*/
+/*Features*/
 .section {
   padding-top: 94px;
 }
@@ -144,6 +138,19 @@ body {
   /* outline: 2px solid red; */
   margin: 0;
 }
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
 .features-cards {
   display: flex;
   flex-wrap: nowrap;
@@ -151,9 +158,7 @@ body {
   padding-left: 0px;
 }
 
-/* .gallery-set {
-  flex-basis: calc((100% - 90px) / 4);
-} */
+/* What do we do */
 .work {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -163,9 +168,6 @@ body {
   flex-wrap: wrap;
   padding-left: 0px;
   justify-content: space-between;
-  /* gap: 30px;
-  padding-right: 0px;
-  padding-left: 0px; */
 }
 .item {
   /* display: block; */
@@ -173,6 +175,7 @@ body {
   text-align: center;
 }
 
+/* Our team */
 .team {
   background-color: #f5f5f5;
   padding-top: 94px;
@@ -229,7 +232,7 @@ body {
   /* outline: 2px solid red; */
   margin: 10px 0px 0px 0px;
 }
-li.list {
+li.team-item {
   border-radius: 0, 0, 4px, 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -252,18 +255,7 @@ span.studio {
 a {
   color: var(--accent-color2);
 }
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
-}
+
 /*Portfolio*/
 /*Filter*/
 .filter-menu {
@@ -293,6 +285,7 @@ a {
   background-color: var(--accent-color);
 }
 
+/* Projects gallery */
 /* .projects {
   display: flex;
   flex-wrap: wrap;
@@ -300,20 +293,33 @@ a {
 .projects {
   padding-left: 0;
 } */
-.project-list {
-  /* margin-right: 30px; */
-  list-style: none;
-  outline: 2px solid red;
+.main-potrfolio {
+  display: block;
 }
-/* .project-list:nth-child(3n) {
-  margin-right: 15px;
-} */
+.projects-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-left: -30px;
+  margin-top: -30px;
+}
+.projects-list > .project-set {
+  /* outline: #000000 solid 1px; */
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
 .project-name {
   font-weight: 700;
   font-size: 18px;
   color: var(--primary-title-color);
   margin-top: 20px;
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
 }
 
 .project {
@@ -321,7 +327,7 @@ a {
   font-size: 16px;
   color: var(--primary-text-color);
   margin-bottom: 4px;
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
 }
 
 .container {
@@ -330,5 +336,9 @@ a {
   padding-left: 15px;
   margin-left: auto;
   margin-right: auto;
-  /* border: 5px solid green; */
+  border: 5px solid green;
+}
+
+.card-content {
+  background-color: yellow;
 }
