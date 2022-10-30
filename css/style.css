@@ -20,11 +20,7 @@ body {
   background-color: var(--accent-color2);
   color: var(--primary-title-color);
 }
-.img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
+
 /* Page-header */
 .page-header {
   margin-bottom: 0;
@@ -61,6 +57,11 @@ body {
   text-decoration: none;
   color: inherit;
 }
+
+.item {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 .header {
   display: flex;
   align-items: center;
@@ -92,7 +93,6 @@ body {
 .hero {
   background-color: #2f303a;
   height: 600px;
-  outline: 2px solid red;
   text-align: center;
   /* padding-bottom: 94px; */
 }
@@ -184,11 +184,13 @@ body {
 .team-list {
   display: flex;
   padding-left: 0px;
-  justify-content: space-between;
+  justify-content: space-around;
+  list-style: none;
 }
-.team-list .li {
+.team-list > li {
   background-color: var(--accent-color2);
   border-radius: 4px;
+  margin-left: 30px;
 }
 .section-title1,
 .section-title2 {
@@ -200,6 +202,7 @@ body {
   letter-spacing: 0.03em;
   /* outline: 2px solid red; */
   margin: 0;
+  margin-bottom: 50px;
 }
 
 .section-text {
@@ -215,14 +218,15 @@ body {
 .member-info {
   margin-top: 30px;
   margin-bottom: 30px;
+  text-align: center;
   /* background-color: var(--accent-color2); */
 }
 .name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
-  /* outline: 2px solid red; */
-  /* margin: 30px 0px 0px 0px; */
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 .position {
@@ -230,23 +234,40 @@ body {
   line-height: 1.2;
   color: var(--primary-text-color);
   /* outline: 2px solid red; */
-  margin: 10px 0px 0px 0px;
+  margin: 0px;
+  margin-bottom: 30px;
+}
+.team-list {
+  margin: 0px;
 }
 li.team-item {
   border-radius: 0, 0, 4px, 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+  padding: 0px;
+  margin-left: 0px;
 }
 
+.team-item:not(:first-child) {
+  padding: 0px;
+  margin-left: 30px;
+}
 .footer {
   background-color: #2f303a;
   color: var(--accent-color2);
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
   margin: 0;
-  padding-top: 94px;
+  margin-top: 94px;
+  padding-top: 60px;
 }
-.address > .a {
+.address {
+  padding-bottom: 60px;
+  font-style: normal;
+}
+.address > a {
   text-decoration: none;
+  font-family: inherit;
+  padding-bottom: 6px;
 }
 
 span.studio {
@@ -258,6 +279,7 @@ a {
 
 /*Portfolio*/
 /*Filter*/
+
 .filter-menu {
   display: flex;
   justify-content: center;
@@ -285,14 +307,6 @@ a {
   background-color: var(--accent-color);
 }
 
-/* Projects gallery */
-/* .projects {
-  display: flex;
-  flex-wrap: wrap;
-}
-.projects {
-  padding-left: 0;
-} */
 .main-potrfolio {
   display: block;
 }
@@ -303,15 +317,15 @@ a {
 
   display: flex;
   flex-wrap: wrap;
+  gap: 30px;
 
-  margin-left: -30px;
-  margin-top: -30px;
+  /* margin-left: -30px;
+  margin-top: -30px; */
 }
-.projects-list > .project-set {
-  /* outline: #000000 solid 1px; */
-  flex-basis: calc(100% / 3 - 30px);
-  margin-left: 30px;
-  margin-top: 30px;
+.project-set {
+  flex-basis: calc((100% - 60px) / 3);
+  /* margin-left: 30px;
+  margin-top: 30px; */
 }
 
 .project-name {
@@ -319,6 +333,7 @@ a {
   font-size: 18px;
   color: var(--primary-title-color);
   margin-top: 20px;
+  margin: 0px;
   /* outline: 2px solid red; */
 }
 
@@ -326,8 +341,14 @@ a {
   font-weight: 400;
   font-size: 16px;
   color: var(--primary-text-color);
-  margin-bottom: 4px;
+  margin-top: 4px;
+  margin-bottom: 0px;
   /* outline: 2px solid red; */
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .container {
@@ -336,9 +357,19 @@ a {
   padding-left: 15px;
   margin-left: auto;
   margin-right: auto;
-  border: 5px solid green;
+  /* border: 5px solid green; */
 }
 
 .card-content {
-  background-color: yellow;
+  /* background-color: yellow; */
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  padding-top: 20px;
+
+  text-align: left;
+}
+
+.project-name {
+  margin-top: 4px;
 }
