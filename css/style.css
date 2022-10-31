@@ -24,7 +24,6 @@ body {
 /* Page-header */
 .page-header {
   margin-bottom: 0;
-  /* outline: 2px solid red; */
   border-bottom: 1px solid #ececec;
 }
 
@@ -61,10 +60,6 @@ body {
   color: inherit;
 }
 
-.item {
-  /* padding-top: 32px; */
-  /* padding-bottom: 32px; */
-}
 .header {
   display: flex;
   align-items: center;
@@ -97,10 +92,8 @@ body {
   background-color: #2f303a;
   height: 600px;
   text-align: center;
-  /* padding-bottom: 94px; */
 }
 .hero-title {
-  /* font-weight: 900px; */
   font-size: 44px;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -138,7 +131,6 @@ body {
   font-size: 14px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  /* outline: 2px solid red; */
   margin: 0;
 }
 
@@ -171,7 +163,6 @@ body {
   margin: 0;
 }
 .item {
-  /* display: block; */
   flex-direction: row;
   text-align: center;
 }
@@ -204,7 +195,6 @@ body {
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
-  /* outline: 2px solid red; */
   margin: 0;
   margin-bottom: 50px;
 }
@@ -215,7 +205,6 @@ body {
   color: var(--primary-text-color);
   font-style: normal;
   font-weight: 400;
-  /* outline: 2px solid red; */
   margin-top: 10px;
   margin: 0;
 }
@@ -223,8 +212,8 @@ body {
   margin-top: 30px;
   margin-bottom: 30px;
   text-align: center;
-  /* background-color: var(--accent-color2); */
 }
+
 .name {
   font-weight: 500;
   font-size: 16px;
@@ -237,7 +226,6 @@ body {
   font-size: 16px;
   line-height: 1.2;
   color: var(--primary-text-color);
-  /* outline: 2px solid red; */
   margin: 0px;
   margin-bottom: 30px;
 }
@@ -259,10 +247,7 @@ li.team-item {
 .footer {
   background-color: #2f303a;
   color: var(--accent-color2);
-  /* outline: 2px solid red; */
   margin: 0;
-  /* margin-top: 94px; */
-  /* padding-top: 60px; */
 }
 .container.footer {
   padding-top: 60px;
@@ -330,14 +315,10 @@ a {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-
-  /* margin-left: -30px;
-  margin-top: -30px; */
 }
+
 .project-set {
   flex-basis: calc((100% - 60px) / 3);
-  /* margin-left: 30px;
-  margin-top: 30px; */
 }
 
 .project-name {
@@ -346,7 +327,6 @@ a {
   color: var(--primary-title-color);
   margin-top: 20px;
   margin: 0px;
-  /* outline: 2px solid red; */
 }
 
 .project {
@@ -355,7 +335,6 @@ a {
   color: var(--primary-text-color);
   margin-top: 4px;
   margin-bottom: 0px;
-  /* outline: 2px solid red; */
 }
 img {
   display: block;
@@ -368,11 +347,9 @@ img {
   padding-left: 15px;
   margin-left: auto;
   margin-right: auto;
-  /* border: 5px solid green; */
 }
 
 .card-content {
-  /* background-color: yellow; */
   border-left: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
