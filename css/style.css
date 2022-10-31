@@ -23,6 +23,8 @@ body {
 
 /* Page-header */
 .page-header {
+  padding-top: 24px;
+  padding-bottom: 24px;
   margin-bottom: 0;
   border-bottom: 1px solid #ececec;
 }
@@ -34,6 +36,10 @@ body {
   color: #000000;
   letter-spacing: 0.03em;
 }
+.logo:hover,
+.logo:focus{
+ background-color: transparent;
+ color: #000000;}
 
 .logo span {
   color: var(--accent-color);
@@ -47,7 +53,8 @@ body {
 .page-link:focus,
 .contact-nav a:hover,
 .contact-nav a:focus {
-  color: var(--accent-color);
+  color: var(--accent-color),
+  background-color: transparent;;
 }
 .active-page {
   color: var(--accent-color);
@@ -156,6 +163,9 @@ body {
 
 /* What do we do  */
 
+.our-work {
+  padding-top: 0px;
+}
 .gallery-set {
   display: flex;
   flex-wrap: wrap;
@@ -279,6 +289,8 @@ a {
 .filter-menu {
   display: flex;
   justify-content: center;
+  padding-bottom: 50px;
+  margin: 0;
 }
 .filter-list {
   list-style: none;
