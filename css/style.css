@@ -37,9 +37,10 @@ body {
   letter-spacing: 0.03em;
 }
 .logo:hover,
-.logo:focus{
- background-color: transparent;
- color: #000000;}
+.logo:focus {
+  background-color: transparent;
+  color: #000000;
+}
 
 .logo span {
   color: var(--accent-color);
@@ -54,8 +55,8 @@ body {
 .page-link:focus,
 .contact-nav a:hover,
 .contact-nav a:focus {
-  color: var(--accent-color),
-  background-color: transparent;;
+  color: var(--accent-color);
+  background-color: transparent;
 }
 .active-page {
   color: var(--accent-color);
